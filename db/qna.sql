@@ -31,3 +31,14 @@ CREATE TABLE photos(
   FOREIGN KEY (answer_id) REFERENCES answers(answer_id)
 )
 
+COPY questions
+FROM '/Users/terrencekoo/Downloads/questions.csv'
+DELIMITER ',' CSV HEADER;
+
+COPY answers
+FROM '/Users/terrencekoo/Downloads/answers.csv'
+DELIMITER ',' CSV HEADER;
+
+COPY photos
+FROM '/Users/terrencekoo/Downloads/answers_photos.csv'
+DELIMITER ',' CSV HEADER;

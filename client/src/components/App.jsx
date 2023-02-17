@@ -9,7 +9,7 @@ import axios from 'axios';
 import Head from './Head.jsx';
 import NavBar from './NavBar.jsx';
 import ProductDetail from './ProductDetail.jsx';
-import RelatedItems from './RelatedItems.jsx';
+// import RelatedItems from './RelatedItems.jsx';
 import QuestionsAnswers from './QuestionsAnswers.jsx';
 import RatingsReviews from './RatingsReviews.jsx';
 import TrackerContext from '../utilities/TrackerContext.js';
@@ -71,7 +71,7 @@ function App() {
         />
         )}
       </div>
-      <div id="RelatedProducts" onClick={trackClick} >
+      {/* <div id="RelatedProducts" onClick={trackClick} >
         <RelatedItems
           reviewMetadata={reviewMetadata}
           productStyle={productStyle}
@@ -81,7 +81,7 @@ function App() {
           currentStyle={currentStyle}
           relItemRef={relItemRef}
         />
-      </div>
+      </div> */}
       <div id="QA" onClick={trackClick}>
         <QuestionsAnswers
           productID={productID}
